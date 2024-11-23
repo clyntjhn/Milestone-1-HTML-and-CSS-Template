@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- bootstrap cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- icons  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <title>Restaurant web</title>
+  </head>
+  <body>
+    <!-- loading icon  -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+    </div>
+
+    <section class="header">
+      <!-- navbar  -->
+      <div
+        class="navbar fixed-top navbar-expand-lg bg-black text-white py-3"
+        id="navbar-shadow"
+      >
+        <div class="container px-3 py-2 py-lg-1">
+          <!-- logo -->
+          <a href="#" class="navbar-brand text-white font-family fs-4 fw-bold"
+            >Burger</a
+          >
+
+          <!-- expand button  -->
+          <button
+            class="navbar-toggler first-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent9"
+            aria-controls="navbarToggleExternalContent9"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="animated-icon1">
+              <span></span><span></span><span></span>
+            </div>
+          </button>
+
+          <!-- nav links  -->
+          <div
+            class="collapse navbar-collapse text-center ms-0"
+            id="navbarToggleExternalContent9"
+          >
+            <ul class="navbar-nav mx-auto pt-3 pt-lg-0 gap-lg-4">
+              <li class="nav-item">
+                <a
+                  href="index.html"
+                  class="hover-nav-link nav-link active text-white"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="Menu.html" class="hover-nav-link nav-link text-white"
+                  >Menu</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="About.html" class="hover-nav-link nav-link text-white"
+                  >About us</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="ContactUs.html"
+                  class="hover-nav-link nav-link text-white"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <hr class="d-lg-none" />
+            <div
+              class="d-flex justify-content-center align-items-center gap-3 pb-3 pb-lg-0"
+            >
+              <div class="d-flex gap-2">
+                <img
+                  class="icon-arrows d-block"
+                  src="./images/buy.png"
+                  alt=""
+                />
+              </div>
+              <a
+                href="Login.html"
+                class="text-decoration-none text-white py-2 px-4 bg-yellow bg-yellowHover rounded-pill"
+                >Login</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of heading  -->
+
+    <!-- slider section  -->
+    <section class="first-p pb-5 mb-5 pt-2">
+      <!-- slider  -->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="list-unstyled carousel-indicators">
+          <li
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active text-white">
+            <div
+              class="overlay-image"
+              style="background-image: url(images/Slider-1.jpg)"
+            ></div>
+            <div class="container carousel-container">
+              <h1 class="font-family">Restaurant</h1>
+              <p class="mt-4 mb-4 fw-bold">Welcome to 50 50</p>
+              <a href="#section2" class="get-started">Start...</a>
+            </div>
+          </div>
+          <div class="carousel-item text-white">
+            <div
+              class="overlay-image"
+              style="background-image: url(images/Slider-2.jpg)"
+            ></div>
+            <div class="container carousel-container">
+              <h1 class="font-family">Restaurant</h1>
+              <p class="mt-4 mb-4 fw-bold">Welcome to 50 50</p>
+              <a href="#section2" class="get-started">Start...</a>
+            </div>
+          </div>
+          <div class="carousel-item text-white">
+            <div
+              class="overlay-image"
+              style="background-image: url(images/Slider-3.jpg)"
+            ></div>
+            <div class="container carousel-container">
+              <h1 class="font-family">Restaurant</h1>
+              <p class="mt-4 mb-4 fw-bold">Welcome to 50 50</p>
+              <a href="#section2" class="get-started">Start...</a>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="#myCarousel"
+          class="carousel-control-prev"
+          data-bs-slide="prev"
+        >
+          <span class="sr-only"></span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a
+          href="#myCarousel"
+          class="carousel-control-next"
+          data-bs-slide="next"
+        >
+          <span class="sr-only"></span>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+    <!-- end of slider section  -->
+
+    <!-- section of discount food  -->
+    <section>
+      <div class="container">
+        <div
+          class="row justify-content-center justify-content-lg-between mx-lg-3 mx-2 mx-lg-0 pb-5"
+        >
+          <div
+            class="col-sm col-lg-5 gap-2 rounded-3 mb-4 mb-lg-0 p-4 bg-discount d-flex flex-column flex-lg-row align-items-lg-center text-center"
+          >
+            <div>
+              <img class="discount-image" src="images/pizza.jpg" alt="" />
+            </div>
+            <div>
+              <h2 class="text-white font-family">Adobo Chicken Pizza</h2>
+              <p class="text-white font-family">
+                <span class="fs-3"> 20% </span> <span>Off</span>
+              </p>
+              <div
+                class="py-2 d-inline-block px-4 bg-yellow bg-yellowHover rounded-pill"
+              >
+                <a href="" class="text-decoration-none text-white">Order Online</a>
+              </div>
+            </div>
+          </div>
+    
+          <div
+            class="col-sm col-lg-5 gap-2 rounded-3 mb-4 mb-lg-0 p-4 bg-discount d-flex flex-column flex-lg-row align-items-lg-center text-center"
+          >
+            <div>
+              <img class="discount-image" src="images/Burger.jpg" alt="" />
+            </div>
+            <div>
+              <h2 class="text-white font-family">Bibingka Burger</h2>
+              <p class="text-white font-family">
+                <span class="fs-3"> 20% </span> <span>Off</span>
+              </p>
+              <div
+                class="py-2 d-inline-block px-4 bg-yellow bg-yellowHover rounded-pill"
+              >
+                <a href="" class="text-decoration-none text-white">Order Online</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end   -->
+
+    <!-- menu section  -->
+    <section class="mt-5 mb-5 pb-4 mx-2">
+      <div class="container">
+        <div class="text-center mb-5" data-wow-delay="0.1s">
+          <h3
+            class="font-family text-center my-2 fw-bold text-warning menufood-header"
+          >
+            Food Menu
+          </h3>
+          <h1 class="text-center fw-bold mt-5 pt-5">Most Popular Foods</h1>
+        </div>
+
+        <div class="tab-class text-center" data-wow-delay="0.1s">
+          <ul
+            class="nav nav -pills d-inline-flex justify-content-center border-bottom mb-5"
+          >
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-decoration-none text-start mx-3 ms-0 pb-3 active"
+                data-bs-toggle="pill"
+                href="#tab-1"
+              >
+                <i class="fa fa-coffee fa-2x text-yellow"></i>
+                <div class="ps-3">
+                  <small class="text-body">Popular</small>
+                  <h6 class="mb-0 text-black fw-bold">Breakfast</h6>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-decoration-none text-start mx-3 pb-3"
+                data-bs-toggle="pill"
+                href="#tab-2"
+              >
+                <i class="fa fa-hamburger fa-2x text-yellow"></i>
+                <div class="ps-3">
+                  <small class="text-black">Special</small>
+                  <h6 class="mb-0 text-black fw-bold">Lunch</h6>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="d-flex align-items-center text-decoration-none text-start mx-3 me-0 pb-3"
+                data-bs-toggle="pill"
+                href="#tab-3"
+              >
+                <i class="fa fa-utensils fa-2x text-yellow"></i>
+                <div class="ps-3">
+                  <small class="text-black">Lovely</small>
+                  <h6 class="text-black fw-bold mb-0">Dinner</h6>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-1.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Chicken Adobo Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A savory burger marinated in soy sauce, vinegar, and spices, topped with garlic and onions.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-2.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Lechon Kawali Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >Crispy fried pork belly served in a burger with a side of liver sauce.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-3.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Pancit Canton Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A unique burger topped with stir-fried noodles, vegetables, and soy sauce.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-4.jpg"
+                      alt=""
+                      style ="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Longganisa Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A flavorful burger made with sweet pork sausage, served with a tangy vinegar dip.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-5.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Bangus Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A delicious burger featuring grilled milkfish, served with a zesty mango salsa.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-6.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Chili Crab Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A spicy burger topped with crab meat and chili sauce, offering a unique twist.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-7.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Turon Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A sweet burger featuring caramelized banana and jackfruit, served with a drizzle of honey.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-8.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Halo-Halo Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A refreshing burger topped with a mix of sweet beans, fruits, and shaved ice.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-2" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-1.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Adobo Flakes Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+ >Crispy adobo flakes served in a burger with garlic mayo and pickled vegetables.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-2.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Pinoy BBQ Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >Grilled pork marinated in a sweet barbecue sauce, served with slaw.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-3.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Laing Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A spicy burger featuring taro leaves cooked in coconut milk.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-4.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Chili Con Carne Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A hearty burger topped with spicy chili con carne and cheese.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-5.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Eggplant Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >Grilled eggplant patty topped with tomato and lettuce.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-6.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Sweet Potato Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A unique burger made with sweet potato patty and spicy mayo.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-7.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Fish Sinigang Burger</span>
+ <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A tangy burger featuring fish cooked in a sour tamarind broth, served with fresh vegetables.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-8.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Turmeric Rice Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A flavorful burger served with turmeric rice and a side of pickled vegetables.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-3" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-1.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Pinoy Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A classic burger with a Filipino twist, featuring local spices and flavors.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-2.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Cheesy Bibingka Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A delightful burger topped with bibingka (rice cake) and cheese.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-3.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Gising-Gising Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A spicy burger featuring ground meat cooked with coconut milk and green beans.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-4.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Pinangat Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A unique burger featuring fish wrapped in taro leaves, served with a spicy sauce.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex ```html
+                      -shrink-0 img-fluid rounded"
+                      src="images/menu-5.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Malunggay Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A nutritious burger made with malunggay (moringa) leaves and spices.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-6.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Turmeric Chicken Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A flavorful burger featuring turmeric-marinated chicken and fresh vegetables.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-7.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Pinoy Spicy Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A spicy burger made with local chili and served with a tangy sauce.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 img-fluid rounded"
+                      src="images/menu-8.jpg"
+                      alt=""
+                      style="width: 80px"
+                    />
+                    <div class="w-100 d-flex flex-column text-start ps-4">
+                      <h5
+                        class="d-flex justify-content-between border-bottom pb-2"
+                      >
+                        <span>Ube Burger</span>
+                        <span class="text-yellow fw-bold">₱115</span>
+                      </h5>
+                      <small class="fst-italic"
+                        >A unique burger featuring ube (purple yam) and cream cheese.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a
+            href=""
+            class="text-decoration-none text-white py-2 d-inline-block px-4 bg-yellow bg-yellowHover rounded-pill"
+            >Read More...</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- end of the menu  -->
+
+    <!-- short information -->
+    <section class="my-5">
+      <div class="container-fluid py-5 bg-lightBlack">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <!-- image  -->
+            <div class="col-12 col-lg-6">
+              <img
+                class="rounded-3 shadow-lg img-fluid"
+                src="./images/about.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-12 col-lg-6 text-white ps-lg-4">
+              <h1
+                class="font-family fw-bold mb-4 mt-5 mt-lg-0 text-center text-lg-start"
+              >
+                We are Fifty Fifty!
+              </h1>
+              <p style="text-align: justify" class="text-lg-start">
+                Welcome to Fifty Fifty, where we celebrate the rich and diverse flavors of Filipino cuisine through our unique burger creations. Our passion for food drives us to craft mouthwatering burgers that blend traditional Filipino ingredients with modern culinary techniques. From the savory Chicken Adobo Burger to the delightful Ube Burger, each dish is thoughtfully prepared to provide an unforgettable dining experience. At Burger Res, we believe in using only the freshest local ingredients, ensuring that every bite is a taste of home. Whether you're grabbing a quick lunch or enjoying a leisurely dinner with friends and family, our warm and inviting atmosphere is the perfect backdrop for any occasion. Join us in our culinary journey as we bring the heart of the Philippines to your plate!
+
+
+              </p>
+              <div class="mt-4 text-center text-lg-start">
+                <a
+                  href=""
+                  class="text-decoration-none text-white py-2 d-inline-block px-4 bg-yellow bg-yellowHover rounded-pill"
+                  >Read More...</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of short information  -->
+
+    <!-- form section  -->
+    <section class="my-5">
+      <div class="container py-5">
+        <h1 class="fw-bold font-family text-center">Fill this form</h1>
+        <div class="row mt-5">
+          <div class="col-lg-6">
+            <div class="form-container">
+              <form action="">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    placeholder="Enter your name..."
+                    class="form-control"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    placeholder="Enter your phone number..."
+                    class="form-control"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    placeholder="Enter your email..."
+                    class="form-control"
+                  />
+                </div>
+                <div class="select-container mb-3">
+                  <label for="custom-select">How many persons?</label>
+                  <select id="custom-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="more">more...</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="date"
+                    placeholder="Enter your name..."
+                    class="form-control"
+                  />
+                </div>
+                <div class="mt-4">
+                  <a
+                    href=""
+                    class="text-decoration-none text-white py-2 d-inline-block px-4 bg-yellow bg-yellowHover rounded-pill"
+                    >Reserve</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="map-container h-100 mt-3 mt-lg-0">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2167642976876!2d-73.98823908459468!3d40.75889097932683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1623123456789!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of form   -->
+
+    <!-- Section of testemonial  -->
+    <section class="my-5">
+      <div class="container py-5">
+        <div class="text-center">
+          <h2 class="testemonial-head text-yellow font-family">Testimonial</h2>
+          <h1 class="fw-bold">Our Clients Say!!</h1>
+        </div>
+        <div class="row pt-5">
+          <div class="col-lg-4">
+            <div style="border-color: rgb(197, 196, 196)" class="border p-4">
+              <i class="fa fa-quote-left fa-2x text-yellow mb-3"></i>
+              <p class="text-secondary">
+                "The Chicken Adobo Burger is a game-changer! The flavors are so rich and authentic. It's like a hug in a bun!"
+              </p>
+              <div class="d-flex">
+                <div class="me-3">
+                  <img
+                    style="width: 50px; height: 50px"
+                    class="rounded-pill"
+                    src="images/testimonial-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5 class="fw-bold">Sara</h5>
+                  <small class="text-secondary">Food Blogger</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div
+              style="border-color: rgb(197, 196, 196)"
+              class="border p-4 bg-yellow"
+            >
+              <i class="fa fa-quote-left fa-2x text-white mb-3"></i>
+              <p class="text-white">
+                "I've tried burgers all over the world, but nothing compares to the flavors at Burger Res. Truly a must-try!"
+              </p>
+              <div class="d-flex">
+                <div class="me-3">
+                  <img
+                    style="width: 50px; height: 50px"
+                    class="rounded-pill"
+                    src="images/testimonial-2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5 class="fw-bold text-white">Jama Gol</h5>
+                  <small class="text-white">Chef</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div style="border-color: rgb(197, 196, 196)" class="border p-4">
+              <i class="fa fa-quote-left fa-2x text-warning mb-3"></i>
+              <p class="text-secondary">
+                "The ambiance is delightful, and the food is even better! The Ube Burger is a delightful surprise!"
+              </p>
+              <div class="d-flex">
+                <div class="me-3">
+                  <img
+                    style="width: 50px; height: 50px"
+                    class="rounded-pill"
+                    src="images/testimonial-4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5 class="fw-bold">Sadaf</h5>
+                  <small class="text-secondary">Regular Customer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of testemonial  -->
+
+    <!-- footer setion  -->
+    <section>
+      <footer class="bg-myBlack py-3 pb-5 text-white">
+        <div class="container">
+          <div class="row pb-5">
+            <div class="col-lg-4">
+              <div class="footer-contact text-center mt-5">
+                <h2 class="text-white font-family">Contact info</h2>
+                <div class="footer_Contact_links d-flex flex-column">
+                  <a href="">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>Location</span>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span> Call +639957837121 </span>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span> lr.cjandales@mmdc.mcl.edu.ph </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="text-center d-flex flex-column mt-5">
+                <a
+                  href=""
+                  class="font-family fs-2 text-decoration-none text-white fw-bold"
+                  >Burger Res</a
+                >
+                <p class="text-white mt-3">
+                  Experience a culinary journey that celebrates the heart and soul of Filipino tradition.
+                </p>
+                <div class="footer_social">
+                  <a href="">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="text-center mt-5">
+                <h2 class="font-family fs-2">Opening Hours</h2>
+                <p class="mt-4">Everyday</p>
+                <p>9:00 AM - 11:00 PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-info">
+            <p>
+              © <span id="displayYear">2024</span> All Rights Reserved<br /><br />
+            </p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scirptNav.js"></script>
+  </body>
+</html>
